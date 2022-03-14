@@ -8,7 +8,7 @@ object StringTask extends App {
     //you will need to write a loop
     //you will probably want to use var to store a temporary string that you keep reweriting
     //return newly created string
-    "FIXME" //FIXME
+    "abracadabra"
   }
   val name = "abracadabra"
 
@@ -19,10 +19,10 @@ for (c <- name) {
 }
 
   val tempName  = name.toUpperCase()
-  print(tempName)
+  println(tempName)
 
 
   //println(processString("abracadabra", "cr")) //should print abRaCadabRa
-  //println(processString("   abracadabra  ", "cr", needsTrim = true)) //should print abRaCadabRa
+ // println(processString("   abracadabra  ", "cr", needsTrim = true)) //should print abRaCadabRa
 }
 
