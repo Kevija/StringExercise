@@ -15,7 +15,7 @@ object StringTask extends App {
   println(name.trim.replaceAll("c", "C").replace("r", "R"))
 
 for (c <- name) {
-    println(s" upercaseChar $c is upercase ${c.toUpper}")
+    println(s" upercaseChar $c upercase is ${c.toUpper}")
 }
 
   val tempName  = name.toUpperCase()
