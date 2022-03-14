@@ -8,21 +8,27 @@ object StringTask extends App {
     //you will need to write a loop
     //you will probably want to use var to store a temporary string that you keep reweriting
     //return newly created string
-    "abracadabra"
+
+    var trimmedString = ""
+    if (needsTrim) {
+      trimmedString = text.trim
+    } else {
+      trimmedString = text
+    }
+
+    var newString = ""
+    for (c <- trimmedString){
+      if (uppercaseChars.contains(c)) {
+        newString += c.toUpper
+      } else {
+        newString += c
+      }
+    }
+    newString
   }
-  val name = "abracadabra"
 
-  println(name.trim.replaceAll("c", "C").replace("r", "R"))
+  println(processString("abracadabra", "cr")) //should print abRaCadabRa
+  println(processString("   abracadabra  ", "cr", needsTrim = true)) //should print abRaCadabRa
 
-for (c <- name) {
-    println(s" upercaseChar $c upercase is ${c.toUpper}")
-}
-
-  val tempName  = name.toUpperCase()
-  println(tempName)
-
-
-  //println(processString("abracadabra", "cr")) //should print abRaCadabRa
- // println(processString("   abracadabra  ", "cr", needsTrim = true)) //should print abRaCadabRa
 }
 
