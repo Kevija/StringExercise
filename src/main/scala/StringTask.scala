@@ -14,10 +14,13 @@ object StringTask extends App {
 
   println(name.trim.replaceAll("c", "C").replace("r", "R"))
 
-  for (c <- name) {
+for (c <- name) {
     println(s" upercaseChar $c is upercase ${c.toUpper}")
+}
 
-  }
+  val tempName  = name.toUpperCase()
+  print(tempName)
+
 
   //println(processString("abracadabra", "cr")) //should print abRaCadabRa
   //println(processString("   abracadabra  ", "cr", needsTrim = true)) //should print abRaCadabRa
